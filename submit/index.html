@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<title>Submit a New Location</title>
+<style>
+#new_location_form {
+	width: 700px;
+}
+textarea {
+	vertical-align: text-top;
+}
+
+legend {
+	background: #FFFFCC;
+}
+
+label {
+	display: block;
+	margin: 7px 2px;
+	font-weight: bold;
+}
+</style>
+<link type="text/css" rel="stylesheet" href="../res/theme.css">
+
+</head>
+<body>
+	<div id="banner">
+		<h1>Public Growing SF</h1>
+	</div>
+
+<h1>Submit a New Location</h1>
+<p>Pro tip: Check the Map to see if the location has been added.</p>
+
+<form action="mailto:dhtmlkitchen@gmail.com" id="new_location_form">
+	<fieldset><legend>You</legend>
+		<label>First name <input type="text" name="name_last"></label>
+		<label>Last name <input type="text" name="name_last"></label>
+	</fieldset>
+
+	<fieldset><legend>Location:</legend>
+		<label>Street address 
+			<input type="text" name="location_address"></label>
+		<label>Location specifics 
+			<input type="text" name="location_specifics" 
+			placeholder="e.g. 4x4 sidewalk square in front of ice creap shop"
+			></label>
+		<label>What's there now? 
+			<textarea type="text" name="location_description"
+			placeholder="weeds and a beer bottle, adjacent to a newspaper dispenser"></textarea>
+		</label>
+		<label>Photo
+			<input type="file" name="location_photo"></label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Nearest Property Owner</legend>
+		<label>Nearest business
+			<input type="text" name="location_nearest_owner" placeholder="Name of Business"></label>
+		<label>
+		<label>Nearest Contact (person) 
+			<input type="text" name="location_nearest_person_contact" placeholder="Name of Business"></label>
+		<label>
+	</fieldset>
+	<input type="submit">
+</form>
+</body>
+</html>
